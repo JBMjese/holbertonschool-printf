@@ -23,4 +23,6 @@ This file contains a set of functions that implement the specific behavior of di
 
 ## main.h
 
-The **main.h** file contains function declarations, structure definitions, and the inclusion of header files necessary for the operation of the program that implements the **_printf** custom function. I
+The **main.h** file contains function declarations, structure definitions, and the inclusion of header files necessary for the operation of the program that implements the **_printf** custom function.
+
+ I
