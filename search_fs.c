@@ -15,7 +15,7 @@ int form_h(const char *format, char *str, va_list arguments, type_cases *cases)
 	int loop = 0;
 	char m = 'f';
 	int x;
-	
+
 	while (format[i] != '\0' && loop == 0)
 	{
 		if (format[i] == '%')
@@ -24,18 +24,18 @@ int form_h(const char *format, char *str, va_list arguments, type_cases *cases)
 			for (x = 0; cases[x].ptr != NULL; x++)
 			{
 				if (format[i + 1] == *(cases[x].ptr))
-					{
-						loop = cases[x].function(str, arguments);
-						i++;
-						m = 't';
-					}
-					if (m == 't')
-					break;
+				{
+					loop = cases[x].function(str, arguments);
+					i++;
+					m = 't';
+				}
+				if (m == 't')
+				break;
 			}
 			if (m == 'f')
-		{
-			add(str, format[i]);
-		}
+			{
+				add(str, format[i]);
+			}
 		}
 		else
 		{

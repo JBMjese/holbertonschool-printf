@@ -83,8 +83,8 @@ char dfunct(char *str, va_list arguments)
 	int i;
 	int p;
 	char is_min = 'f';
-	
-	if (num == -2147483648) 
+
+	if (num == -2147483648)
 	{
 		num++;
 		is_min = 't';
@@ -98,11 +98,11 @@ char dfunct(char *str, va_list arguments)
 	x = num;
 	while (x >= 10)
 	{
-		x = x / 10; 
+		x = x / 10;
 		a++;
 	}
 	x = num;
-	for (i = 0; i <= a; i++) 
+	for (i = 0; i <= a; i++)
 	{
 		p = x / powr(10, (a - i));
 		str[_strlen(str) + 1] = '\0';
