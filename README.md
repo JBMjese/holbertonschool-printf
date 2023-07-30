@@ -1,4 +1,4 @@
-#custom function _printf
+# custom function _printf
 
 The following is a customized and simplified implementation of the **printf** function in the **C** programming language, which has been named **_printf** This function has been designed to allow printing of formatted output to the standard output of the program. The **_printf** function is capable of handling a variety of format specifiers, such as **%d** to print signed integers, **%s** to print strings, and more.
 
@@ -46,4 +46,21 @@ The sterlen.c file contains the implementation of two functions: _strlen and pow
 * @arguments: the va_list of arguments  
 * @cases: the array of type_cases  
 * Return: return 1 if the loop needs to be broken, 0 otherwise
- I
+
+## arr_cases.c
+
+The file **arr_casses.c** contains the variable called casses of **type_cases** type that contains a character string of the different types of data that the **_printf**  function receives.
+The following function returns the variable casses
+type_cases *get_cases()
+
+## search_fs.c
+
+In the file search_fs.c the function form_h validates the specifiers that are in the string pointed to by the *format pointer and modifies the positions of the string pointed to by the str pointer. It also receives a list of arguments and the string of the data types.
+
+int form_h(const char *format, char *str, va_list arguments, data *cases)
+ * form_h - process the format string and update the output buffer
+ * @format: the format string to process
+ * @str: the output buffer to update
+ * @arguments: the va_list of arguments
+ * @cases: the array of type_cases
+ * Return: return 1 if the loop needs to be broken, 0 otherwise I
